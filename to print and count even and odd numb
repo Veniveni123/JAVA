@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class hello{
+    public static void main(String args[])
+    {
+        Scanner s = new Scanner(System.in);
+        int s_n = s.nextInt();
+        int e_n = s.nextInt();
+        int ce=0;
+        int co=0;
+        for(int i = s_n; i<= e_n; i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println("even numb:"+i);
+                ce++;
+            }
+        }
+        for(int i = s_n; i<= e_n; i++)
+        {
+            if(i%2!=0)
+            {
+                System.out.println("odd numb:"+i);
+                co++;
+            }
+        }
+        System.out.println("even count:"+ce++);
+        System.out.println("odd count:"+co++);
+    }
+}
