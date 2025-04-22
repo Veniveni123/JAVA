@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class hello{
+    public static void main(String args[])
+    {
+        Scanner s = new Scanner(System.in);
+        int[] num = new int[10];
+        for(int i =0;i<=9;i++)
+        {
+            num[i]= s.nextInt();
+        }
+        for(int i =0; i<=9;i++)
+        {
+            System.out.println("array value at index "+i+" is "+num[i]); 
+        }
+    }
+}
